@@ -1,3 +1,9 @@
+### I had made this repository for testing purposes to check and implement new changes to Cryptocurrency.
+### All changes that had been done here is just for learning purpose anyone who wants to utilize some of these new changes in their project while learning or developing are most welcome.
+
+# Happy Learning.
+
+
 ![OKCash-OK](http://i.imgur.com/FzFxAhN.png)
 
 [![Build Status](https://travis-ci.org/okcashpro/okcash.svg?branch=master)](https://travis-ci.org/okcashpro/okcash) [![Download OK wallet](https://img.shields.io/badge/downloads-latest%20client-blue.svg)](https://github.com/okcashpro/okcash/releases/latest) [![OK Network](https://img.shields.io/badge/network%20status-stable-brightgreen.svg)](http://explorer.okcash.co) 

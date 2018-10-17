@@ -5430,6 +5430,9 @@ uint64_t CWallet::GetStakeWeight() const
 
     if (nBalance <= nReserveBalance)
         return false;
+    
+    if ((nBalance - nReserveBalance) < 50 * COIN ) // Minimum 50 token required to stake.
+        return false;
 
     vector<const CWalletTx*> vwtxPrev;
 
@@ -5497,6 +5500,9 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     int64_t nBalance = GetBalance();
     
     if (nBalance <= nReserveBalance)
+        return false;
+    
+     if ((nBalance - nReserveBalance) < 50 * COIN ) // Minimum 50 token required to stake.
         return false;
     
     vector<const CWalletTx*> vwtxPrev;
